@@ -1,25 +1,25 @@
-function sayHello (string) {
-  // your code here
+const sayHello = (name) => {
+  return 'Hello, ' + name + '!';
 };
 
-function uppercase (string) {
-  // your code here
+const uppercase = (name) => {
+  return name.toUpperCase();
 };
 
-function lowercase (string) {
-  // your code here
+const lowercase = (name) => {
+  return name.toLowerCase();
 };
 
-function countCharacters (string) {
-  // your code here
+const countCharacters = (name) => {
+  return name.length;
 };
 
-function firstCharacter (string) {
-  // your code here
+const firstCharacter = (name) => {
+  return name.charAt(0);
 };
 
-function firstCharacters (string, n) {
-  // your code here
+const firstCharacters = (name) => {
+  return name.substring(0,4)
 };
 
 module.exports = {

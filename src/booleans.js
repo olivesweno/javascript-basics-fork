@@ -1,61 +1,112 @@
-function negate(a) {
-  // your code here
+const negate = (answer) => {
+  return !answer;
+  };
+
+const both = (a, b) => {
+  if (a && b === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const either = (a, b) => {
+  if ( a || b === true) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
-function both(a, b) {
-  // your code here
+const none = (a, b) => {
+  if (a || b === true) {
+    return false;
+  } else {
+    return true;
+  }
 };
 
-function either(a, b) {
-  // your code here
-};
+const one = (a, b) => {
+  if ((!a && b) || (a && !b)) {
+    return true;
+} else {
+  return false;
+}
+}
 
-function none(a, b) {
-  // your code here
-};
-
-function one(a, b) {
-  // your code here
-};
-
-function truthiness(a) {
-  // your code here
+const truthiness = (a) => {
+  return Boolean(a);
 };
 
 function isEqual(a, b) {
-  // your code here
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isGreaterThan(a, b) {
-  // your code here
+  if (a > b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  if (a <= b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isOdd(a) {
-  // your code here
+  if(a % 2==0) {
+    return false;
+  } else {
+    return true;
+  }
 };
 
 function isEven(a) {
-  // your code here
+  if(a % 2==0) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isSquare(a) {
-  // your code here
+  return Math.sqrt(a) %1 === 0;
 };
 
 function startsWith(char, string) {
-  // your code here
+  return string.startsWith(char);
 };
 
 function containsVowels(string) {
-  // your code here
+  string = string.toLowerCase()
+  const vowels = [ 'a', 'e', 'i', 'o', 'u']
+  let count = 0
+  vowels.forEach(vowels => {
+  if(string.includes(vowels)) {
+    count ++;
+   } 
+  })
+  if(count >= 1) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isLowerCase(string) {
-  // your code here
+  if(string === string.toLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 module.exports = {
